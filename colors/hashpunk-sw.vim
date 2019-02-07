@@ -1,7 +1,11 @@
-" Name:         hashpunk
-" Author:       abnt713
-" Maintainer:   abnt713
-" License:      MIT
+" File              : hashpunk-sw.vim
+" Author            : Matthieu Petiteau <mpetiteau.pro@gmail.com>
+" Date              : Thu  7 Feb 09:33:20 2019
+" Last Modified Date: Thu  7 Feb 10:43:32 2019
+" Last Modified By  : Matthieu Petiteau <mpetiteau.pro@gmail.com>
+"
+" Fork from original theme hashpunk by abnt713
+" https://github.com/abnt713/vim-hashpunk
 
 highlight clear
 
@@ -9,7 +13,7 @@ if exists('syntax_on')
   syntax reset
 endif
 
-let g:colors_name = 'hashpunk'
+let g:colors_name = 'hashpunk-sw'
 set background=dark
 
 " Dark Meadow Legacy
@@ -20,23 +24,25 @@ let s:SkyBlue1        =  ['117' , '#87afff']
 let s:Magenta2        =  ['165' , '#d700ff']
 let s:MediumOrchid1   =  ['207' , '#ff5faf']
 
-" Hashpunk
-let s:DeepSkyBlue3 = ['31', '#0087af']
+" Hashpunk-green
+let s:DeepSkyBlue3    =  ['31'  , '#0087af']
 
-let s:RadicalRed1 = ['197', '#ff3366']
-let s:RadicalRed2 = ['198', '#fe0040']
+let s:RadicalRed1     =  ['197' , '#ff3366']
+let s:RadicalRed2     =  ['198' , '#fe0040']
 
-let s:Grey0 = ['16', '#000000']
-let s:Grey7 = ['233', '#121212']
-let s:Grey15 = ['235', '#262626']
-let s:Grey19 = ['236', '#303030']
-let s:Grey42 = ['242', '#6c6c6c']
-let s:Grey54 = ['245', '#505050']
-let s:Grey66 = ['248', '#a8a8a8']
-let s:Grey74 = ['250', '#bcbcbc']
-let s:Grey93 = ['255', '#eeeeee']
+let s:Grey0           =  ['16'  , '#000000']
+let s:Grey7           =  ['233' , '#121212']
+let s:Grey15          =  ['235' , '#262626']
+let s:Grey19          =  ['236' , '#303030']
+let s:Grey30          =  ['239' , '#4e4e4e']
+let s:Grey42          =  ['242' , '#6c6c6c']
+let s:Grey54          =  ['245' , '#505050']
+let s:Grey66          =  ['248' , '#a8a8a8']
+let s:Grey74          =  ['250' , '#bcbcbc']
+let s:Grey82          =  ['252' , '#d0d0d0']
+let s:Grey93          =  ['255' , '#eeeeee']
 
-" Text style 
+" Text style
 let s:italic      =   'italic'
 let s:bold        =   'bold'
 let s:underline   =   'underline'
@@ -57,14 +63,14 @@ endfunction
 "
 " For reference on what each group does, please refer to this:
 " vimdoc.sourceforge.net/htmldoc/syntax.html
-"
-call s:highlight('Comment', s:Grey42, s:clear, s:italic)
+
+call s:highlight('Comment', s:Grey30, s:clear, s:italic)
 call s:highlight('Constant', s:RadicalRed1, s:clear, s:none)
-call s:highlight('String', s:Grey93, s:clear, s:none)
+call s:highlight('String', s:Grey42, s:clear, s:none)
 call s:highlight('Character', s:Grey93, s:clear, s:none)
-call s:highlight('Number', s:Grey93, s:clear, s:none)      
+call s:highlight('Number', s:RadicalRed2, s:clear, s:none)
 call s:highlight('Boolean', s:RadicalRed2, s:clear, s:none)
-call s:highlight('Float', s:RadicalRed1, s:clear, s:none)
+call s:highlight('Float', s:RadicalRed2, s:clear, s:none)
 
 call s:highlight('Identifier', s:RadicalRed1, s:clear, s:none)
 call s:highlight('Function', s:RadicalRed1, s:clear, s:none)
@@ -72,13 +78,13 @@ call s:highlight('Function', s:RadicalRed1, s:clear, s:none)
 call s:highlight('Statement', s:RadicalRed1, s:clear, s:bold)
 call s:highlight('Conditional', s:RadicalRed1, s:clear, s:bold)
 call s:highlight('Repeat', s:RadicalRed1, s:clear, s:bold)
-call s:highlight('Label', s:RadicalRed1, s:clear, s:bold)       
+call s:highlight('Label', s:RadicalRed1, s:clear, s:bold)
 call s:highlight('Operator', s:RadicalRed1, s:clear, s:none)
 call s:highlight('Keyword', s:RadicalRed1, s:clear, s:none)
 call s:highlight('Exception', s:RadicalRed1, s:clear, s:italic)
 
 call s:highlight('PreProc', s:Grey54, s:clear, s:italic)
-call s:highlight('Include', s:Grey74, s:clear, s:italic)
+call s:highlight('Include', s:RadicalRed2, s:clear, s:italic)
 call s:highlight('Define', s:Grey66, s:clear, s:italic)
 call s:highlight('Macro', s:Grey66, s:clear, s:italic)
 call s:highlight('PreCondit', s:RadicalRed1, s:clear, s:italic)
@@ -104,7 +110,7 @@ call s:highlight('ColorColumn', s:RadicalRed1, s:Grey15, s:none)
 
 
 " Interface highlighting
-call s:highlight('Normal', s:Grey93, s:Grey7, s:none)
+call s:highlight('Normal', s:Grey74, s:Grey7, s:none)
 call s:highlight('Visual', s:clear, s:Grey0, s:none)
 call s:highlight('Cursor', s:clear, s:Grey0, s:none)
 call s:highlight('iCursor', s:clear, s:Grey0, s:none)
