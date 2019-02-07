@@ -1,5 +1,7 @@
 # vim-hashpunk-sw
-A vim colorscheme based on hashpunk, which is based on pink neon
+A vim colorscheme based on hashpunk, which is based on pink neon.  
+
+![Alt text](https://github.com/smallwat3r/vim-hashpunk-sw/blob/master/screenshot/python.png)
 
 ## Credits and References ##
 * Fork from original theme [hashpunk](https://github.com/abnt713/vim-hashpunk)
