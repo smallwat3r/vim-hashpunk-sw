@@ -1,7 +1,7 @@
 " File              : hashpunk-sw.vim
 " Author            : Matthieu Petiteau <mpetiteau.pro@gmail.com>
 " Date              : Thu  7 Feb 09:33:20 2019
-" Last Modified Date: Thu  7 Feb 10:43:32 2019
+" Last Modified Date: Thu  7 Feb 09:33:20 2019
 " Last Modified By  : Matthieu Petiteau <mpetiteau.pro@gmail.com>
 "
 " Fork from original theme hashpunk by abnt713
@@ -27,7 +27,7 @@ let s:MediumOrchid1   =  ['207' , '#ff5faf']
 " Hashpunk-green
 let s:DeepSkyBlue3    =  ['31'  , '#0087af']
 
-let s:RadicalRed1     =  ['197' , '#ff3366']
+let s:Chartreuse1     =  ['118' , '#87ff00']
 let s:RadicalRed2     =  ['198' , '#fe0040']
 
 let s:Grey0           =  ['16'  , '#000000']
@@ -65,48 +65,48 @@ endfunction
 " vimdoc.sourceforge.net/htmldoc/syntax.html
 
 call s:highlight('Comment', s:Grey30, s:clear, s:italic)
-call s:highlight('Constant', s:RadicalRed1, s:clear, s:none)
+call s:highlight('Constant', s:Chartreuse1, s:clear, s:none)
 call s:highlight('String', s:Grey42, s:clear, s:none)
 call s:highlight('Character', s:Grey93, s:clear, s:none)
 call s:highlight('Number', s:RadicalRed2, s:clear, s:none)
 call s:highlight('Boolean', s:RadicalRed2, s:clear, s:none)
 call s:highlight('Float', s:RadicalRed2, s:clear, s:none)
 
-call s:highlight('Identifier', s:RadicalRed1, s:clear, s:none)
-call s:highlight('Function', s:RadicalRed1, s:clear, s:none)
+call s:highlight('Identifier', s:Chartreuse1, s:clear, s:none)
+call s:highlight('Function', s:Chartreuse1, s:clear, s:none)
 
-call s:highlight('Statement', s:RadicalRed1, s:clear, s:bold)
-call s:highlight('Conditional', s:RadicalRed1, s:clear, s:bold)
-call s:highlight('Repeat', s:RadicalRed1, s:clear, s:bold)
-call s:highlight('Label', s:RadicalRed1, s:clear, s:bold)
-call s:highlight('Operator', s:RadicalRed1, s:clear, s:none)
-call s:highlight('Keyword', s:RadicalRed1, s:clear, s:none)
-call s:highlight('Exception', s:RadicalRed1, s:clear, s:italic)
+call s:highlight('Statement', s:Chartreuse1, s:clear, s:bold)
+call s:highlight('Conditional', s:Chartreuse1, s:clear, s:bold)
+call s:highlight('Repeat', s:Chartreuse1, s:clear, s:bold)
+call s:highlight('Label', s:Chartreuse1, s:clear, s:bold)
+call s:highlight('Operator', s:Chartreuse1, s:clear, s:none)
+call s:highlight('Keyword', s:Chartreuse1, s:clear, s:none)
+call s:highlight('Exception', s:Chartreuse1, s:clear, s:italic)
 
 call s:highlight('PreProc', s:Grey54, s:clear, s:italic)
 call s:highlight('Include', s:RadicalRed2, s:clear, s:italic)
 call s:highlight('Define', s:Grey66, s:clear, s:italic)
 call s:highlight('Macro', s:Grey66, s:clear, s:italic)
-call s:highlight('PreCondit', s:RadicalRed1, s:clear, s:italic)
+call s:highlight('PreCondit', s:Chartreuse1, s:clear, s:italic)
 
-call s:highlight('Type', s:RadicalRed1, s:clear, s:bold)
-call s:highlight('StorageClass', s:RadicalRed1, s:clear, s:bold)
-call s:highlight('Structure', s:RadicalRed1, s:clear, s:bold)
-call s:highlight('Typedef', s:RadicalRed1, s:clear, s:bold)
+call s:highlight('Type', s:Chartreuse1, s:clear, s:bold)
+call s:highlight('StorageClass', s:Chartreuse1, s:clear, s:bold)
+call s:highlight('Structure', s:Chartreuse1, s:clear, s:bold)
+call s:highlight('Typedef', s:Chartreuse1, s:clear, s:bold)
 
 call s:highlight('Special', s:Grey66, s:clear, s:none)
-call s:highlight('SpecialChar', s:RadicalRed1, s:clear, s:none)
-call s:highlight('Delimiter', s:RadicalRed1, s:clear, s:none)
+call s:highlight('SpecialChar', s:Chartreuse1, s:clear, s:none)
+call s:highlight('Delimiter', s:Chartreuse1, s:clear, s:none)
 call s:highlight('SpecialComment', s:Grey54, s:clear, s:none)
-call s:highlight('Debug', s:RadicalRed1, s:clear, s:none)
+call s:highlight('Debug', s:Chartreuse1, s:clear, s:none)
 call s:highlight('Underlined', s:Grey54, s:clear, s:underline)
-call s:highlight('Error', s:RadicalRed1, s:clear, s:underline)
-call s:highlight('Todo', s:RadicalRed1, s:clear, s:none)
+call s:highlight('Error', s:Chartreuse1, s:clear, s:underline)
+call s:highlight('Todo', s:Chartreuse1, s:clear, s:none)
 
 call s:highlight('Directory', s:Grey93, s:clear, s:bold)
-call s:highlight('CursorLine', s:RadicalRed1, s:clear, s:bold)
-call s:highlight('MatchParen', s:Grey0, s:RadicalRed1, s:none)
-call s:highlight('ColorColumn', s:RadicalRed1, s:Grey15, s:none)
+call s:highlight('CursorLine', s:Chartreuse1, s:clear, s:bold)
+call s:highlight('MatchParen', s:Grey0, s:Chartreuse1, s:none)
+call s:highlight('ColorColumn', s:Chartreuse1, s:Grey15, s:none)
 
 
 " Interface highlighting
@@ -129,12 +129,12 @@ call s:highlight('SignColumn', s:Grey93, s:clear, s:none)
 
 
 " Java syntax highlighting
-call s:highlight('javaParen', s:RadicalRed1, s:clear, s:none)
+call s:highlight('javaParen', s:Chartreuse1, s:clear, s:none)
 call s:highlight('javaCommentTitle', s:Grey42, s:clear, s:none)
-call s:highlight('javaDocParam', s:RadicalRed1, s:clear, s:none)
+call s:highlight('javaDocParam', s:Chartreuse1, s:clear, s:none)
 call s:highlight('javaDocTags', s:Grey54, s:clear, s:none)
 call s:highlight('javaScopeDecl', s:Grey54, s:clear, s:none)
-call s:highlight('javaStorageClass', s:RadicalRed1, s:clear, s:none)
+call s:highlight('javaStorageClass', s:Chartreuse1, s:clear, s:none)
 
 
 " Python syntax highlighting
@@ -147,8 +147,8 @@ call s:highlight('vimOption', s:Grey93, s:clear, s:none)
 
 
 " NERDTree
-call s:highlight('NERDTreeClosable', s:RadicalRed1, s:clear, s:none)
-call s:highlight('NERDTreeOpenable', s:RadicalRed1, s:clear, s:none)
+call s:highlight('NERDTreeClosable', s:Chartreuse1, s:clear, s:none)
+call s:highlight('NERDTreeOpenable', s:Chartreuse1, s:clear, s:none)
 
 " *NOTE*
 "
