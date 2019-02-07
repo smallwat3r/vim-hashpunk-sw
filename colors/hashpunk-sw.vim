@@ -84,7 +84,7 @@ call s:highlight('Keyword', s:Chartreuse1, s:clear, s:none)
 call s:highlight('Exception', s:Chartreuse1, s:clear, s:italic)
 
 call s:highlight('PreProc', s:Grey54, s:clear, s:italic)
-call s:highlight('Include', s:RadicalRed2, s:clear, s:italic)
+call s:highlight('Include', s:Chartreuse1, s:clear, s:italic)
 call s:highlight('Define', s:Grey66, s:clear, s:italic)
 call s:highlight('Macro', s:Grey66, s:clear, s:italic)
 call s:highlight('PreCondit', s:Chartreuse1, s:clear, s:italic)
